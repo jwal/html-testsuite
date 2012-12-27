@@ -41,9 +41,9 @@ ctx.restore()
 ctx.fillRule = "nonzero";
 _assertSame(ctx.fillRule, "nonzero", "ctx.fillRule", "'nonzero'");
 ctx.fillRule = "evenodd";
-_assertSame(ctx.fillRule, evenodd, "ctx.fillRule", "evenodd");
+_assertSame(ctx.fillRule, "evenodd", "ctx.fillRule", "'evenodd'");
 ctx.fillRule = "exampleUnrecognizedValue";
-_assertSame(ctx.fillRule, evenodd, "ctx.fillRule", "evenodd");
+_assertSame(ctx.fillRule, "evenodd", "ctx.fillRule", "'evenodd'");
 
 });
 </script>
