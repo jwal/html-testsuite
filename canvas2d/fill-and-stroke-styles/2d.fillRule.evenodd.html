@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<title>Canvas test: 2d.fillRule.evenodd</title>
+<meta name="author" content="James Ascroft-Leigh">
+<script src="../../common/canvas-tests.js"></script>
+<link rel="stylesheet" href="../../common/canvas-tests.css">
+<body class="show_output">
+
+<h1><a href="index.2d.html">2d</a>.<a href="index.2d.fillRule.html">fillRule</a>.evenodd</h1>
+<p class="desc"></p>
+
+<div class="refs">Spec references:
+<ul>
+<li><a href="../annotated-spec/canvas.html#testrefs.2d.fillRule.evenodd">2d.fillRule.evenodd</a>
+<li><a href="https://github.com/jwal/webkit/wiki/fillRule-specification">Draft specification</a></li>
+</ul>
+</div>
+<p class="notes">
+<p class="output">Actual output:</p>
+<canvas id="c" class="output" width="426px" height="142px"><p class="fallback">FAIL (fallback content)</p></canvas>
+<p class="output expectedtext">Expected output:<p><img src="2d.fillRule.evenodd.png" class="output expected" id="expected" alt="">
+<ul id="d"></ul>
+<script>
+_addTest(function(canvas, ctx) {
+
+ctx.fillRule = "evenodd";
+_render_fillRule_example_shapes(ctx);
+
+});
+</script>
+
